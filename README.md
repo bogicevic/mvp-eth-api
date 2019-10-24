@@ -1,5 +1,8 @@
 # mvp-eth-api
-## To run the app:
+
+> Base url of deployed live API: ```https://mvp-eth-api.herokuapp.com```
+
+## To run the app locally:
 1. `npm install`
 2. `npm start`
 
