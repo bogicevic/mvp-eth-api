@@ -4,8 +4,7 @@
   "description": "The most basic Server Side Vault for Ethereum",
   "main": "index.js",
   "engines": {
-    "node": ">=10.16.0",
-    "npm": ">=6.9.0"
+    "node": "=12.x"
   },
   "scripts": {
     "start": "node index.js",
