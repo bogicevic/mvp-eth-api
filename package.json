@@ -1,0 +1,25 @@
+{
+  "name": "mvp-task-1",
+  "version": "1.0.0",
+  "description": "The most basic Server Side Vault for Ethereum",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.16.0",
+    "npm": ">=6.9.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zoran Bogicevic <zbogicevic@outlook.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "web3": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
