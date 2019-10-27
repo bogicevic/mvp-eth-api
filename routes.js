@@ -1,13 +1,25 @@
 module.exports = app => {
   const controller = require('./controller');
 
-  app
-    .route('/balance')
-    .get(controller.getBalance)
+  /**
+   * Rute bi normalno izgledale /api/v<version>/<route>
+   * Za potrebe zadatka bih rekao da je ovako OK
+   */
 
-//   app
-//     .route('/tasks/:taskId')
-//     .get(todoList.read_a_task)
-//     .put(todoList.update_a_task)
-//     .delete(todoList.delete_a_task);
+  app
+    .route('/me')
+    .get(controller.getAddress);
+
+  app
+    .route('/balance/:address?')
+    .get(controller.getBalance);
+
+  app
+    .route('/create-account')
+    // ne saljem nikakve podatke u requestu, nema potrebe za POST
+    .get(controller.createAccount);
+
+  app
+    .route('/set-address/:newAddress?')
+    .get(controller.editAddress);
 };

@@ -15,10 +15,12 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "ethereumjs-tx": "^2.1.1",
     "express": "^4.17.1",
     "web3": "^1.2.0"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "nodemon": "^1.19.4"
   }
 }
